@@ -1,0 +1,24 @@
+<!-- interpolation -->
+<!-- <h1>{{name}}</h1>
+<h1>{{age}}</h1> -->
+
+<!-- Property Binding -->
+<!-- <h1 [innerHTML]="name"></h1> -->
+
+<!-- Attribute Binding  -->
+
+
+<!-- Event Binding -->
+<!-- <button (click)="show()">hello</button> -->
+
+
+<!-- Two way data Binding -->
+
+enter name :
+<input [value]="data" (input)="data=$any($event.target).value">
+output data :{{data}}<br>
+<!-- or -->
+<input [(ngModel)]="data1">
+outout data1:{{data1}}
+
+

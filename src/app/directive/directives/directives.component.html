@@ -1,0 +1,119 @@
+
+<!-- ngif  -->
+<!-- <input type="radio" name="radio1" (click)="changevalue(true)">true
+<input type="radio" name="radio1" (click)="changevalue(false)">false
+
+<div *ngIf="isvalid">
+ this is valid data
+</div>
+
+<div *ngIf="!isvalid">
+    this is not valid data
+</div> -->
+
+
+<!-- ngif and else -->
+<!-- <input type="radio" name="radio1" (click)="changevalue(true)">true
+<input type="radio" name="radio1" (click)="changevalue(false)">false
+
+<div *ngIf="isvalid; else elseblock">
+ this is valid data
+</div>
+
+<ng-template #elseblock>
+    <div>
+        this is not valid data elseblock
+    </div>
+</ng-template> -->
+
+
+
+<!-- then block -->
+<!-- <input type="radio" name="radio1" (click)="changevalue(true)">true
+<input type="radio" name="radio1" (click)="changevalue(false)">false
+
+<div *ngIf="isvalid;then thenblock else elseblock"></div>
+    
+    <ng-template #thenblock>
+        <div>
+            this is valid data then block
+        </div>
+    </ng-template>
+    
+
+
+<ng-template #elseblock>
+    <div>
+        this is not valid data then block
+    </div>
+</ng-template> -->
+
+
+
+
+<!-- ngswitch -->
+
+<!-- enter your name : <input type="text" #data (keyup)="0">
+
+<div [ngSwitch]="data.value">
+    <div *ngSwitchCase="'kirti'">hello kirti</div>
+    <div *ngSwitchCase="'Abhi'">hello abhi</div>
+    <div *ngSwitchCase="'abhishek'">hello abhishek</div>
+    <div *ngSwitchDefault>no data found</div>
+
+</div> -->
+
+
+<!-- ngfor -->
+<!-- 
+<div *ngFor="let student of students; let i=index; let f=first; let l=last; let ev=even; let od=odd;">
+    {{i+1}}:{{student.name}}-{{f}}-{{l}}-{{ev}}-{{od}}
+</div> -->
+
+
+<!-- track with ngfor  better performace -->
+
+<!-- <table>
+    <tr *ngFor="let student of students;let i=index ; TrackBy:trackbystudentid">
+    <td>{{i+1}}</td>
+    <td>{{student.studentid}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.gender}}</td>
+    </tr>
+
+</table>
+<button (click)="getmorestudnt()">add</button> -->
+
+
+
+<!-- grouping with ng for -->
+
+<!-- <ul *ngFor="let group of countrydetails ">
+  <li>{{group.country}}</li>
+  
+  <ul *ngFor="let person of group.people ">
+    <li>{{person.name}}</li>
+  </ul>
+
+</ul> -->
+
+
+<!-- ng style -->
+
+<ul *ngFor="let person of people">
+
+    <li [ngStyle]="{'color':getcolor(person.country)}">
+          {{person.name}}-{{person.country}}
+    </li>
+
+
+</ul>
+
+
+
+
+
+
+
+
+
